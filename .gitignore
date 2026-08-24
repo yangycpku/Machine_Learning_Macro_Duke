@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Reading list: publish the compiled PDF only, not the source
+Reading_List.tex
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk

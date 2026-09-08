@@ -1,11 +1,9 @@
 # Lecture Slides
 
-Slides will be posted here as the course approaches.
-
 | # | Lecture | Slides |
 |---|---------|--------|
-| 1 | DeepHAM: Global Solutions with Generalized Moments | *Coming soon* |
-| 2 | Structural Reinforcement Learning | *Coming soon* |
-| 3 | DeepSAM: Search and Matching with Distributions | *Coming soon* |
+| 1 | Deep Learning for Solving Heterogeneous Agents Models (DeepHAM) | [Lecture1_slides_DeepHAM.pdf](Lecture1_slides_DeepHAM.pdf) |
+| 2 | Structural Reinforcement Learning for Macroeconomics (SRL) | [Lecture2_slides_SRL.pdf](Lecture2_slides_SRL.pdf) |
+| 3 | Deep Learning for Continuous Time Models and Structural Estimation (DeepSAM) | [Lecture3_slides_Continuous_Time_Structural_Estimation.pdf](Lecture3_slides_Continuous_Time_Structural_Estimation.pdf) |
 
-See the [reading list](../Reading_List.pdf) for the readings that accompany each lecture, and [`Tutorials/`](../Tutorials) for the code walkthroughs.
+Lecture 1 opens with a title page and an overview for the whole mini-course. See the [reading list](../Reading_List.pdf) for the readings that accompany each lecture, and [`Tutorials/`](../Tutorials) for the code.

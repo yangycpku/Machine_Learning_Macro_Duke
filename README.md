@@ -1,14 +1,24 @@
-# Mini-Course on Machine Learning for Heterogeneous Agent Macroeconomics (2026)
+# Mini-Course on Machine Learning for Dynamic Economic Models (2026)
 
 <p align="center">
   <img src="screens/duke_econ.png" alt="Duke Economics" height="90">
 </p>
 
-This is the teaching repository for the mini-course **Machine Learning for Heterogeneous Agent Macroeconomics**, taught at the **Duke University Department of Economics**, **September 8–11, 2026**.
+This is the teaching repository for the mini-course **Machine Learning for Dynamic Economic Models**, taught at the **Duke University Department of Economics**, in **September 2026**.
 
 **Instructor:** [Yucheng Yang](https://sites.google.com/site/yangyucheng1993/home) — University of Zurich; ERID Visitor, Duke University · <yucheng.yang@uzh.ch>
 
 Lecture slides, code, and readings are posted here as the course approaches.
+
+## Schedule
+
+The lectures take place over lunch, **12:00–1:15 PM**:
+
+| Lecture | Date | Room |
+|---|---|---|
+| 1. Deep Learning for Solving Heterogeneous Agents Models | Tuesday, September 8 | SS105 |
+| 2. Structural Reinforcement Learning for Macroeconomics | Wednesday, September 9 | SS113 |
+| 3. Deep Learning for Continuous Time Models and Structural Estimation | Friday, September 11 | SS113 |
 
 - **[Reading List (PDF)](Reading_List.pdf)** — suggested preparation plus core and background readings
 
@@ -18,11 +28,11 @@ Lecture slides, code, and readings are posted here as the course approaches.
 
 The course covers three machine-learning methods for solving heterogeneous agent models with aggregate shocks, moving from discrete time to continuous time and from a distribution-based to a price-based state space.
 
-| # | Lecture | Method | Core reading | Code |
-|---|---------|--------|--------------|------|
-| 1 | **DeepHAM** | Use neural networks to parameterize high-dimensional value and policy functions in heterogeneous agent models, with the cross-sectional distribution represented by *learned generalized moments*; trained along simulated paths. | [Han, Yang & E (2026)](Readings/DeepHAM_paper.pdf), *Quantitative Economics* | [DeepHAM](Tutorials/DeepHAM_code.md) *(to be updated)* |
-| 2 | **SRL** — Structural Reinforcement Learning | Replace the distribution with low-dimensional *prices* as state variables; agents learn equilibrium price dynamics from simulated paths and optimize via structural policy gradient. | [Yang, Wang, Schaab & Moll (2025)](Readings/SRL_paper.pdf) | [SRL tutorials](Tutorials/SRL_tutorial_code.md) *(to be updated)* |
-| 3 | **DeepSAM** | Search and matching with two-sided heterogeneity in continuous time: general equilibrium as a high-dimensional PDE with the distribution as a state variable, solved globally by deep learning and estimated via SMM. | [Payne, Rebei & Yang (2026)](Readings/DeepSAM_paper.pdf), *conditionally accepted, Econometrica* | *Coming soon* |
+| # | Lecture | Slides | Method | Core reading | Code |
+|---|---------|:---:|--------|--------------|------|
+| 1 | **Deep Learning for Solving Heterogeneous Agents Models** | [PDF](Lectures/Lecture1_slides_DeepHAM.pdf) | Use neural networks to parameterize high-dimensional value and policy functions in heterogeneous agent models, with the cross-sectional distribution represented by *learned generalized moments*; trained along simulated paths. | [Han, Yang & E (2026)](Readings/DeepHAM_paper.pdf), *Quantitative Economics* | [Tutorial 1: DeepHAM on Colab](Tutorials/Tutorial1) |
+| 2 | **Structural Reinforcement Learning for Macroeconomics** | [PDF](Lectures/Lecture2_slides_SRL.pdf) | Replace the distribution with low-dimensional *prices* as state variables; agents learn equilibrium price dynamics from simulated paths and optimize via structural policy gradient. | [Yang, Wang, Schaab & Moll (2025)](Readings/SRL_paper.pdf) | [SRL tutorials](Tutorials/SRL_tutorial_code.md) *(to be updated)* |
+| 3 | **Deep Learning for Continuous Time Models and Structural Estimation** | [PDF](Lectures/Lecture3_slides_Continuous_Time_Structural_Estimation.pdf) | Search and matching with two-sided heterogeneity in continuous time: general equilibrium as a high-dimensional PDE with the distribution as a state variable, solved globally by deep learning and estimated via SMM. | [Payne, Rebei & Yang (2026)](Readings/DeepSAM_paper.pdf), *conditionally accepted, Econometrica* | *Coming soon* |
 
 Materials: [`Lectures/`](Lectures) (slides) · [`Tutorials/`](Tutorials) (code walkthroughs) · [`Readings/`](Readings) (papers).
 

@@ -63,6 +63,13 @@ Use `smoke` in class. For a `teaching` run, switch the Colab runtime to a GPU fi
 (`Runtime -> Change runtime type -> T4 GPU`, free tier) and expect roughly the A100 time
 scaled up; on the CPU runtime it is too slow for a session.
 
+**Which GPU.** T4 and L4 work. The **G4 (Blackwell) runtime does not**: Colab's TensorFlow 2.20
+ships no kernels for that GPU, and the first operation fails with `CUDA_ERROR_INVALID_HANDLE`.
+Each notebook's setup cell probes the GPU in a separate process and, if the probe fails,
+hides the GPU and runs on the CPU, so the notebooks still complete on a G4 (a `smoke` run
+takes about a minute there, on its faster CPUs). Set `FORCE_CPU = True` in that cell to skip
+the GPU deliberately.
+
 Runs are written to `data/simul_results/KS/game_nn_n50_<exp>_<RUN_MODE>` inside the cloned
 repository, so a quick smoke run can never overwrite a long one, nor the reference solutions
 below. On Colab that folder lives on the runtime's disk and disappears when the runtime is

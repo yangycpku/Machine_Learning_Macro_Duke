@@ -1,0 +1,51 @@
+# @package _global_
+train_nn:
+    _target_: train_nn.Train_NN
+
+    # Variables for loading
+    loading_saved_model_S: False     # Indicator for loading S
+    loading_saved_model_V_u: False   # Indicator for loading V_u
+    loading_saved_model_V_v: False   # Indicator for loading V_v
+
+    # Network structure
+    nn_width: 50            # Network width per layer
+    nn_num_layers: 4        # Number of layers
+
+    # Training parameters
+    lr: 1e-4              # Learning rate for main
+    lr_init: 1e-3         # Learning rate for initialization
+    epochs_init: 6001     # Epochs for initialization
+    epochs: 100001        # Epochs for main
+    # Variables for Environment
+    rho: 0.05             # Discount rate
+    delta_0: 0.2            # Match exit rate
+    d_delta: 0.02         # d_delta = delta*dshock
+    beta: 0.72            # Surplus share
+    b: 1.0                # Unemployment benefit (changed from 0.5 to 1)
+    xi: 2.0               # Elasticity parameter
+    init_kappa: 6.4       # init kappa for homotopy training (changed from 5.6 tp 6.3)
+    kappa: 6.4            # Matching function parameter (changed from 5.6 tp 6.3)
+    kappa_iter: 1         # iteration times for kappa
+    nu: 0.49995               # Matching function parameter
+    lam_LH: 0.4            # Jump rate from low to high
+    lam_LD: 0.001
+    lam_HL: 0.4            # Jump rate from high to low (same as lam_L in this case)
+    lam_HD: 0.001
+    lam_DL: 0.0995
+    lam_DH: 0.0995
+    pi_L: 0.4975
+    pi_H: 0.4975
+    pi_D: 0.005
+    z_0: 1.0 
+    delta_symm: 0.825
+    nx: 5                # Number of worker types
+    ny: 11                # Number of firm types
+    prod_type: 'PAM'      # Production function type
+    shock_type: 'SEP_rare'      # shock type
+    alpha_type: 'continuous'  # Alpha function type
+
+seed: 777
+save_freq: 10000      # save once every save_freq loops
+sample_low: 256       # sample number for first round of training
+sample_high: 512      # sample number for 2nd round of training
+lr_low: 1e-5          # lower learning rate for 2nd round of training

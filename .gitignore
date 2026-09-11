@@ -11,3 +11,10 @@ Reading_List.tex
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+
+# DeepSAM tutorial: files written at run time by solve_steady_state(), and executed copies
+Tutorials/Tutorial_DeepSAM/*.npy
+Tutorials/Tutorial_DeepSAM/agg_shock_*/
+Tutorials/Tutorial_DeepSAM/outputs/
+Tutorials/**/*_output.ipynb
+__pycache__/
